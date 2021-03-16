@@ -1,1 +1,1 @@
-![screenshot](t3.png)
+![GIF](lab6.gif)

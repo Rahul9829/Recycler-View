@@ -1,5 +1,6 @@
 package com.example.recyclerview;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -75,7 +76,11 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_reset) {
+
+            Intent i = new Intent(this, MainActivity.class);
+            startActivity(i);
+            finish();
             return true;
         }
 
